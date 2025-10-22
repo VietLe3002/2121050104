@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let toDay = new Date();
+// document.writeln(toDay.getDate());
+
+// document.writeln("<br>");
+
+// let yesterday = new Date('2025-09-28');
+// document.writeln(yesterday);
+
+//Khai báo array (mảng)
+let arr = [
+    1, 2, 3, 4, 5,'a', 'b', 'c', 'd', 'a',
+];
+
+// In ra chiều dài của mảng
+document.writeln("In ra chiều dài của mảng: "+arr.length);
+
+document.writeln("<br>");
+
+// In ra phần tử trong mảng 
+document.writeln("In ra được vị trí phần tử mình muốn kiếm: "+arr[3]);
+
+document.writeln("<br>");
+
+// Tìm vị trí xuất hiện đầu tiên của ký tự cần tìm
+document.writeln("In ra vị trí đầu tiên của ký tự mình tìm: "+arr.indexOf('a'));
+
+document.writeln("<br>");
+
+// Tìm vị trí xuất hiện cuối cùng của ký tự cần tìm
+document.writeln("In ra vị trí cuối cùng của ký tự mình tìm: "+arr.lastIndexOf('a'));
+
+document.writeln("<br>");
+
+// Kiểm tra biến có phải array không
+document.writeln("Kiểm tra biến có phải mảng không: "+ Array.isArray(arr));
+
+document.writeln("<br>");
+
+// Phương thức concat dùng để nối các array lại với nhau
+let a, b, c, d;
+a=[1, 2, 3];
+b="JavaScript";
+c=[42,"Js","Ptc",];
+d=a.concat(b,c)
+
+document.writeln("Sau khi đã nối chuỗi: "+d);
+document.writeln("<br>");
+document.writeln("Kiểm tra chuỗi có phải là array không: "+ Array.isArray(d));
+
+document.writeln("<br>");
+
+// Phương thức join dùng để nối các phần tử của array bằng ký tự mình nhập
+
+document.writeln("Sử dụng join để nối các phần tử của array bằng ký tự mình nhập: "+d.join('-'));
+document.writeln("<br>");
+document.writeln("Kiểm tra chuỗi có phải là array không: " + Array.isArray(d));
+document.writeln("<br>");
+document.writeln("Kiểu dữ liệu của mảng đang là: " + typeof(d));
+
+// Pop dùng để lấy phần tử cuối cùng của mảng
+e = d.pop();
+document.writeln("<br>");
+document.writeln("Phần tử cuối của mảng là: "+e);
+
+// Push dùng để thêm vào phần tử mới vào vị trí cuối cùng của mảng
+
+d.push("Việt Anh");
+document.writeln("<br>");
+document.writeln("Phần tử mới được thêm nằm ở cuối mảng: "+d);
+
+// Reverse dùng để đảo ngược lại vị trí các phần tử trong mảng
+document.writeln("<br>");
+document.writeln("Đảo lại các phần tử trong mảng: "+ d.reverse());
+
+// shift() dùng để xóa phần tử đầu tiên trong mảng
+document.writeln("<br>");
+d.shift;
+document.writeln("Xóa ký tự đầu trong bảng: "+ d);
+
+// unshift() dùng để thêm phần tử vào đầu mảng vị trí 0
+document.writeln("<br>");
+d.unshift("Lê")
+document.writeln("Thêm ký tự đầu trong bảng: " +d);
+
+// Gắn lại giá trị trong biến 
+d[3]=4;
+document.writeln("<br>");
+document.writeln("Thay giá trị: "+d);
+
+// Câu điều kiện if - else
+
+document.writeln("<br>");
+let now = toDay.getHours();
+if(0<=now<10){
+
+document.writeln("Chào buổi sáng");
+} else if(10<=now && now<12){
+    document.writeln("Chào buổi trưa");
+} else if(12<=now && now<17){
+    document.writeln("Chào buổi chiều");
+} else {
+    document.writeln("Chào buổi tối");
+}
+
+document.writeln("<br>");
+let so1=Number( prompt("Mời bạn nhập số:"));
+if(so1%2==0){
+    document.writeln(`Số ${so1} là số chẵn`);
+} else{
+    document.writeln(`Số ${so1} là số lẻ`);
+}
+    </script>
+</body>
+</html>

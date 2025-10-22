@@ -1,0 +1,40 @@
+h3{
+    color: orange;
+}
+
+#title{
+    background-color: blueviolet;
+}
+
+.BG{
+    background-color: cadetblue;
+}
+
+p{
+    color: red;
+    background-color: blue;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: pink;
+    margin: 100px;
+    margin: 50px;
+    margin: 80px;
+    margin: 30px;
+
+    /* trên dưới:100px ; trái phải: 50px */
+    /* trên, phải, dưới, trái */
+
+    width: 50%;
+    margin: auto;
+
+    /* margin auto : Căn giữa */
+}
+
+.box3{
+    background-color: yellow;
+}

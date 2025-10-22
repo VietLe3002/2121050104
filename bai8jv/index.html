@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thongTinDonHang = {
+            maDonHang: "12345678",
+            thongTinKhachHang: {
+                hoTen: "MinhHieu",
+                soDienThoai: "0987654321",
+                trangThaiThanhVienThanThiet: false,
+            },
+            danhSachSanPham: {
+                sp01: {
+                    maSanPham: "1",
+                    tenSanPham: "Matcha",
+                    soLuong: 10,
+                    giaTien: "10000",
+                },
+                sp02: {
+                    maSanPham: "2",
+                    tenSanPham: "Cà phê",
+                    soLuong: 10,
+                    giaTien: "20000",
+                },
+                sp03: {
+                    maSanPham: "3",
+                    tenSanPham: "Trà sữa",
+                    soLuong: 15,
+                    giaTien: "20000",
+                }
+            },
+            thanhToanThanhCong: true,
+            diaChiGiaoHang: "Đông Ngạc"
+        }
+
+        let tongSP1 = thongTinDonHang.danhSachSanPham.sp01.giaTien * thongTinDonHang.danhSachSanPham.sp01.soLuong;
+        let tongSP2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
+        let tongSP3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
+
+        let tongSP = tongSP1 + tongSP2 + tongSP3;
+
+        document.writeln(tongSP + "do dai ma don hang:" + thongTinDonHang.maDonHang.length);
+
+
+        let myString = "Hello";
+        document.writeln(myString[3]);
+
+
+        let myString1 = "Hello";
+        document.writeln(myString1.slice(1,4));
+
+
+        let myString2 = "Hello Vanh";
+        document.writeln(myString2.replace("Hello","Xinchao"));
+
+
+
+        let myString3 = "Hello Hanh";
+        document.writeln(myString3.toLowerCase());
+
+
+
+        let myString4 = "Hello lanh";
+        document.writeln(myString4.indexOf("e"));
+
+
+
+        let myString5 = "Hello ldanh";
+        document.writeln(myString5.includes("e"));
+
+
+
+        let myString6 = "Hello laanh";
+        document.writeln(myString6.split(""));
+
+
+
+
+        // Tách chuỗi thành mảng
+        
+        let danhSach = ["abcdd" , " ndjbfdjbf" , "Nguyễn ádsdsad" ]
+        document.writeln(danhSach[2].startsWith("Nguyễn"));
+
+
+        // chuyển chuỗi về số
+
+        let so = "2233"
+        document.writeln(typeof (so));
+        document.writeln(typeof (Number(so)));
+
+
+        // to Fixed để định dạng số với số chữ thập nhất định
+
+        let pi =3.14159;
+        pi=pi.toFixed(3);
+        document.writeln(pi);
+
+
+        // IsNaN(): kiểm tra xem 1 giá trị có phải NaN hay ko
+        // IsFinite(): ktra xem một giá trị có phải hữu hạn hay ko
+
+        // IsNaN(NaN): // kết quả: true
+        // IsFinite(): // kết quả: true
+
+
+
+
+        // Date
+          
+        let toDay = new Date();
+        document.writeln(toDay);
+
+    </script>
+</body>
+</html>
+
+
+<!-- length: đếm chuỗi kí tự -->
+ <!-- repalce : thay thế 1 chuỗi -->
+  <!-- Chuyển đổi chữ hoa / chữ thường  toLowerCase(), toUpperCase() -->
+<!-- index0f : trả ra vị trí xuất hiện đầu tiên
+          Nếu có: vị trí, nếu k: -1 -->
+
+<!-- includes:  kiểm tra xem trong chuỗi có sự xuất hiện kí tự không -->
+
+ <!-- Split : mỖI LẦN GẶP ký tự thì sẽ tách ra thành array        -->

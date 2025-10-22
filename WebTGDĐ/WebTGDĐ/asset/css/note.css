@@ -1,0 +1,90 @@
+/* 1. vị trí
+2. kích thước (width, height)
+3. màu sắc
+4. Kiểu dáng(kiểu chữ, hình tròn, vuông,..) */
+
+/* 5. Từ ngoài vào trong
+6. Từ trên xuống dưới
+7. Từ tổng quan đến chi tiết */
+
+ 
+
+
+  /* Lưu ý CSS:      /* text-decoration: Xoá gạch chân
+
+                     /* text-align: center  : căn giữa chữ
+
+                     /* display: block  : viết từ hàng ngang thành hàng dọc
+
+                     /* dislay: none  : ẩn khỏi phần tử giao diện  */ 
+
+                     /* display: flex : Dùng để xếp các <li> từ dọc thành ngang ( và cũng căn vào giữa ô )
+
+                     /* flex-direction: colum;   : các phần tử con sẽ xắp xếp từ trên xuống dưới thay vì mặc định theo hàng ngang
+                      
+                     /* gap: chia khoảng cách giữa các item */ 
+                                                          
+                     
+
+                     /* line-height:  - Nếu chỉ có 1 dòng chữ → line-height sẽ quyết định khoảng trống trên & dưới chữ trong khối đó (giúp căn giữa theo chiều dọc).
+
+                                      - Nếu có nhiều dòng chữ → line-height quyết định khoảng cách giữa các dòng.
+
+                     /* list-style: none  : Dùng để bỏ các chấm đầu câu, số thứ tự trong thẻ ul
+
+                     /* Inline-block: Các phần tử có thể nằm trên cùng một dòn
+
+                     
+                     /* list-style-type: none;  : loại bỏ dấu chấm đầu câu */
+
+                     /* text-transform: Viết hao và viết thường */
+
+                     
+                     /* justify-content: space-between :  Phần tử đầu tiên sẽ dính sát bên trái.
+
+                                                          Phần tử cuối cùng sẽ dính sát bên phải.
+
+                                                           Các phần tử ở giữa sẽ được phân bổ khoảng trống đều nhau. */
+
+                                                           
+                     /*  justify-content: flex-star  :  Đẩy tất cả các phần tử về bên trái
+
+                     /* align-items: center  :  Căn giữa chữ với thanh NAV
+
+                     /* max-width : dùng để giới hạn chiều rộng tối đa của một phần tử.
+
+                     /* margin: auto  : để tự động canh giữa phần tử trong không gian mà nó được chứa. (Thường được dùng để căn giữa phần tử theo chiều ngang.)
+
+                     /* position: relative  :
+
+                     /* position: absolute  :
+
+                     /* border-radius : Tạo viền cho khung
+
+                     /* border-bottom,top,left,right  : tạo đường line xung quanh phần tử
+
+                     
+
+                     /* margin-top    : Có tác dụng tạo khoảng cách bên ngoài phần tử , điều chỉnh để các phần tử cách nhau
+                              bottom
+                              left
+                              right
+
+                     /* padding-top    : Có tác dụng tạo khoảng cách bên trong phần tử ( Giữa nội dung và viền - boder )     
+                              bottom
+                              left
+                              right
+
+
+                      /* letter-spacing  : dãn cách chữ
+
+
+                      /* float : left-right  : Dùng để đưa các ô từ dọc thành ngang
+
+                      /* overflow : hidden   : Dùng để khắc phục vấn đề FLOAT
+
+                      /* cursor: pointer;    : Dù để thay đổi con trỏ chuột khi di vào một thành phần
+
+                      /* Nếu flex-direction: row; (mặc định) → trục chính là ngang → justify-content: center; sẽ căn các phần tử giữa theo chiều ngang.
+
+                         Nếu flex-direction: column; → trục chính là dọc → justify-content: center; sẽ căn các phần tử giữa theo chiều dọc.

@@ -1,0 +1,117 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.LOGO{
+    font-size: 80px;
+}
+
+
+
+body {
+  background: linear-gradient(#222, #000);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background: #121212;
+  padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+/* .logo {
+  font-size: 40px;
+  margin-bottom: 20px;
+} */
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #222;
+}
+
+.btn-green {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #1DB954;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn-green:hover {
+  background: #1ed760;
+}
+
+form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #000;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.signup-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.signup-text a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}

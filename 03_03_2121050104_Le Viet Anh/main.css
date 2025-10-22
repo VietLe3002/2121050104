@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    /* width: 100%; */
+}
+
+.container-box{
+    display: flex;
+    margin-top: 60px;
+    
+}
+
+.nav{
+    margin-left: 40px;
+    
+}
+
+.danhsach{
+    list-style: none;
+    
+}
+
+.nav .danhsach{
+    gap: 20px;
+}
+
+ul li{
+    font-size: 13px;
+    margin-top: 15px;
+
+}
+
+
+
+.box1{
+    margin-left: 180px;
+    flex-direction: row;
+}
+
+.box2{
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+ /* .text1{
+    padding-left: 180px;
+    padding-bottom: 170px;
+}
+
+.text2{
+    padding-left: 180px;
+} */
+
+.text1{
+    width: 340px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+    
+    
+}
+
+.text2{
+    width: 550px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+h1{
+    font-size: 16px;
+}
+
+p{
+    font-size: 11px;
+}
+
+.container2{
+    /* justify-content: center;
+    display: flex; */
+    /* flex-direction: row;
+    justify-content: center; */
+    margin-top: 100px;
+    
+    
+    
+
+}
+
+.img1{
+    margin-top: 300px;
+    margin-right: 800px;
+}
+
+.img2{
+    
+   margin-top: 40px;
+}
+
+.img3{
+    margin-top: 40px;
+}
+
+h2{
+    font-size: 16px;
+}
+ 
+p1{
+    color: gray;
+}
+
+.img1 .p1{
+    color: gray;
+    font-style: italic;
+}
+
+.img2 .p1{
+    color: gray;
+    font-style: italic;
+}
+
+.img3 .p1{
+    color: gray;
+    font-style: italic;
+}
