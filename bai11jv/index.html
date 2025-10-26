@@ -54,6 +54,15 @@
       // Hiển thị kết quả ra ô input
       document.getElementById("xemKetQua").value = diem.toFixed(2);
     }
+
+
+    let A = parseFloat(prompt("Mời bạn nhập điểm A:"));
+    let B = parseFloat(prompt("Mới bạn nhập điểm B:"));
+    let C = parseFloat(prompt("Mời bạn nhập điểm C:"));
+
+    let tongdiem = score(A,B,C);
+    document.writeln(tongdiem);
+
   </script>
 </body>
 </html>
