@@ -6,58 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>Bài 11</h1>
+      <h1>Bài 11</h1>
+<h2>Tính điểm</h2>
 
-    <h2>Tính điểm</h2>
-    <div>
-        <input type="number" id="diemA" placeholder="Nhập điểm A">
-    </div>
+<div>
+    <input type="number" id="diemA" placeholder="Nhập điểm A">
+</div>
 
-    <div>
-        <input type="number" id="diemB" placeholder="Nhập điểm B">
-    </div>
+<div>
+    <input type="number" id="diemB" placeholder="Nhập điểm B">
+</div>
 
-    <div>
-        <input type="number" id="diemC" placeholder="Nhập điểm C">
-    </div>
+<div>
+    <input type="number" id="diemC" placeholder="Nhập điểm C">
+</div>
 
-    <div>  
-        <button onclick="xemKetQua()">Tính điểm</button>
-    </div>
+<div>
+    <button onclick="xemKetQua()">Tính điểm</button>
+</div>
 
-    <div>
-        Kết quả: <input type="text" id="xemKetQua">
-    </div>
+<div>
+    Kết quả: <input type="text" id="xemKetQua">
+</div>
 
-    <!-- Tạo hàm JS tính điểm của sinh viên dựa vào 3 điểm A,B,C
-    biết điểm tổng = A*0.6 + B*0.3 + C*0.1  -->
+<script>
+function score(A, B, C) {
+    let Tongdiem = A*0.6 + B*0.3 + C*0.1;
+    return Tongdiem;
+}
 
-    <script>
-        
-        function score(A,B,C){
-            let Tongdiem = A*0.6 + B*0.3 + C*0.1;
-            return Tongdiem ;
-        };
+function xemKetQua() {
+    // Lấy giá trị từ các ô input
+    let diemA = parseFloat(document.getElementById('diemA').value);
+    let diemB = parseFloat(document.getElementById('diemB').value);
+    let diemC = parseFloat(document.getElementById('diemC').value);
 
-      function xemKetQua (){
-             let diemA = document.getElementById('diemA').value;
-             let diemB = document.getElementById('diemB').value;
-             let diemC = document.getElementById('diemC').value;
-             
-             let diem = score(diemA,diemB,diemC);
-              document.getElementById("xemKetQua").value=diem;
-      
-      }
+    // Gọi hàm tính điểm
+    let diem = score(diemA, diemB, diemC);
 
-       
-    
-        // let A = parseFloat(prompt("Mời bạn nhập điểm A"));
-        // let B = parseFloat(prompt("Mời bạn nhập điểm B"));
-        // let C = parseFloat(prompt("Mời bạn nhập điểm C"));
+    // Hiển thị kết quả ra ô text
+    document.getElementById('xemKetQua').value = diem.toFixed(2);
+}
+</script>
 
-        // let tongdiem = score(A,B,C);
-        // document.writeln(tongdiem);
-    </script>
 </body>
 </html>
