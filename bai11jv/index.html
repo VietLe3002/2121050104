@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính điểm</title>
 </head>
 <body>
-      <h1>Bài 11</h1>
-<h2>Tính điểm</h2>
+  <h1>Bài 11</h1>
+  <h2>Tính điểm</h2>
 
-<div>
+  <div>
     <input type="number" id="diemA" placeholder="Nhập điểm A">
-</div>
+  </div>
 
-<div>
+  <div>
     <input type="number" id="diemB" placeholder="Nhập điểm B">
-</div>
+  </div>
 
-<div>
+  <div>
     <input type="number" id="diemC" placeholder="Nhập điểm C">
-</div>
+  </div>
 
-<div>
+  <div>
     <button onclick="xemKetQua()">Tính điểm</button>
-</div>
+  </div>
 
-<div>
+  <div>
     Kết quả: <input type="text" id="xemKetQua">
-</div>
+  </div>
 
-<script>
-function score(A, B, C) {
-    let Tongdiem = A*0.6 + B*0.3 + C*0.1;
-    return Tongdiem;
-}
+  <script>
+    // Hàm tính điểm tổng
+    function score(A, B, C) {
+      let Tongdiem = A * 0.6 + B * 0.3 + C * 0.1;
+      return Tongdiem;
+    }
 
-function xemKetQua() {
-    // Lấy giá trị từ các ô input
-    let diemA = parseFloat(document.getElementById('diemA').value);
-    let diemB = parseFloat(document.getElementById('diemB').value);
-    let diemC = parseFloat(document.getElementById('diemC').value);
+    function xemKetQua() {
+      // Lấy giá trị nhập vào và chuyển sang số
+      let diemA = parseFloat(document.getElementById('diemA').value);
+      let diemB = parseFloat(document.getElementById('diemB').value);
+      let diemC = parseFloat(document.getElementById('diemC').value);
 
-    // Gọi hàm tính điểm
-    let diem = score(diemA, diemB, diemC);
+      // Kiểm tra xem người dùng có nhập đủ 3 giá trị chưa
+      if (isNaN(diemA) || isNaN(diemB) || isNaN(diemC)) {
+        alert("Vui lòng nhập đầy đủ điểm A, B, C!");
+        return;
+      }
 
-    // Hiển thị kết quả ra ô text
-    document.getElementById('xemKetQua').value = diem.toFixed(2);
-}
-</script>
+      // Gọi hàm tính toán
+      let diem = score(diemA, diemB, diemC);
 
+      // Hiển thị kết quả ra ô input
+      document.getElementById("xemKetQua").value = diem.toFixed(2);
+    }
+  </script>
 </body>
 </html>
