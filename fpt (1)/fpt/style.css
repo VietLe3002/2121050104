@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+header {
+  background-color: black;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 70%;
+  margin: auto;
+}
+
+.danhmuc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 15%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #9b9b9b;
+  font-size: 16px;
+  font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+a:hover {
+  color: orange;
+}
+
+.chucnang {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.muagoi {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.dangnhap {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 100px;
+}
+
+main {
+  background-color: #131314;
+  color: white;
+  width: 100%;
+  /* height: 1000px; */
+}
+
+.quangcao {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 70%;
+  background-color: black;
+  /* height: 1000px; */
+  margin: auto;
+}
+
+.banner {
+  width: 98%;
+}
+
+.qc {
+  margin-top: 10px;
+  width: 98%;
+  border-radius: 10px;
+}
+
+.tentheloai {
+  margin: 20px;
+}
+
+.danhsach {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.phim {
+  width: 19%;
+  transition: transform 0.3s ease;
+}
+
+.phim:hover {
+    transform: scale(1.05);
+    border-radius: 8px;
+}
+
+.phim img {
+  width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 70%;
+  margin: auto;
+  height: auto;
+}
+.footer {
+  background-color: #131314;
+  color: white;
+  padding: 30px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0;
+  gap: 20px;
+}
+
+.footer-logo img {
+  display: flex;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-left: 220px;
+}
+
+
+.footer-column p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: grey;
+}
+
+
+.footer-column a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-family: Times New Roman;
+}
+
+.footer-column a:hover {
+  text-decoration: none;
+  color: #f37021;
+}
+
+.footer-bottom {
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+.footer-bottom p {
+  font-size: 13px;
+  color: aliceblue;
+  align-items: center;
+}
+#trailer2{
+  height: 500px;
+  width: 100%;
+}
+
+.ten {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Style mới cho button Xem trailer */
+.btn-trailer {
+    background: linear-gradient(135deg, #ff6b00, #ff8c00, #ff6b00);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px auto;
+    min-width: 160px;
+}
+
+.btn-trailer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+    background: linear-gradient(135deg, #ff8c00, #ff9d00, #ff8c00);
+}
+
+.btn-trailer:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.3);
+}
+
+.btn-trailer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-trailer:hover::before {
+    left: 100%;
+}
+
+/* Icon play cho button */
+.btn-trailer::after {
+    content: '▶';
+    font-size: 14px;
+}
+
+/* Container cho button để căn giữa */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+/* Hiệu effect khi click */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 107, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 0, 0);
+    }
+}
+
+.btn-trailer.pulse {
+    animation: pulse 0.6s ease;
+}
+
+/* Style cho button khi đang hiển thị trailer */
+.btn-close-trailer {
+    background: linear-gradient(135deg, #ff4444, #ff6666);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 68, 68, 0.3);
+    margin: 10px auto;
+    display: block;
+}
+
+.btn-close-trailer:hover {
+    background: linear-gradient(135deg, #ff6666, #ff8888);
+    transform: translateY(-2px);
+}
