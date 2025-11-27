@@ -104,7 +104,70 @@
         echo $i . "<br>";
        }
     
+       // 10. Mảng
 
+       $Mang = ["An", "Nhat Anh", "Viet Anh" ];
+
+       print_r($Mang);
+
+       echo $Mang[1] . "<br>";
+
+       echo count($Mang);
+
+       $Mang[0] = "Nhat Anh";
+
+       print_r($Mang);
+
+
+       // Xóa
+       unset($Mang[2]);
+
+       print_r($Mang);
+
+       // Thêm
+
+       $Mang[] = "Luc";
+       print_r($Mang);
+       echo "<br>";
+
+
+       // Sắp xếp
+
+       $Mang2 = ["C","B","D","A"];
+       print_r($Mang2);
+       echo "<br>";
+
+       // Sx tăng
+
+
+
+
+
+
+
+       // 11. Kiểm tra biến có tồn tại hay không
+
+       $bienA = "Hello";
+       isset($bienA);  //true
+       isset($bienB);  //false
+
+       // 12. Hàm
+
+       // Không tham số 
+
+       function XinChao(){
+          return "Hello";
+
+       }
+       
+       echo XinChao() . "<br>";
+
+
+       function XinChao2($Ten){
+          return "Hello" . $Ten;
+       }
+
+       echo XinChao2("Viet Anh") . "<br>";
 
     
     
